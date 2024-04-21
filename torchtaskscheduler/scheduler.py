@@ -9,7 +9,7 @@ TASK_RUNNING_PLACEHOLDER_VALUE = -487329475
 
 def decrease_tasks(workers_tasks: list[list[int]]) -> None:
     for k in range(len(workers_tasks)):
-        for i in range(workers_tasks[k]):
+        for i in range(len(workers_tasks[k])):
             if workers_tasks[k][i] != -1:
                 workers_tasks[k][i] -= 1
 
