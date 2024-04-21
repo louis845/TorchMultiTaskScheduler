@@ -122,6 +122,7 @@ class Scheduler:
         assert not self.started, "Scheduler already started"
         assert not self.killed, "Scheduler was killed"
         self.process.start()
+        self.started = True
     
     def stop_process(self):
         if self.started:
